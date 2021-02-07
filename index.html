@@ -835,21 +835,15 @@
 									</div>
 								</div>                                
 							</div>
+							
 							<div class="row">
 								<div class="col-lg-12">
-									<div class="form-group mt-3 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".3s">
-										<input name="title" type="text"  class="form-control b-box" placeholder="Your Subject.." required>
+									<div class="form-group mt-3 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".4s">
+										<input name="comments" type="text"  rows="4" class="form-control b-box" placeholder="Your message..." >
 									</div>
 								</div>
 							</div>
 							
-							<!-- <div class="row">
-								<div class="col-lg-12">
-									<div class="form-group mt-3 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".4s">
-										<input name="comments" type="text"  rows="4" class="form-control b-box" placeholder="Your message..." required>
-									</div>
-								</div>
-							</div> -->
 							<div class="row">
 								<div class="col-lg-12 mt-4 mb-5 text-center wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".5s">
 									<button type="submit" class="submitBnt btn hover-state">Send</button>
@@ -873,6 +867,13 @@
 
 
 	<!-- JAVASCRIPTS -->
+
+	<script>
+		var formEl = document.forms.contactForm;
+		var formData = new FormData(formEl);
+		var name = formData.get('name');
+		console.log(name)
+	</script>
 
 	<script src="assets/js/vendor.js"></script>
 
